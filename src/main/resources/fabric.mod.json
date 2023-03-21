@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "pdata",
+  "version": "${version}",
+
+  "name": "Modifiable Players",
+  "description": "Small mod removing the check for a player entity in the /data modify command. This can definitely break something. Use with caution",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.jothb.pdata.P_Data"
+    ]
+  },
+  "mixins": [
+    "pdata.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
